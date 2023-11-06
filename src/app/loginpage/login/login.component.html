@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+
+        </div>
+        <div class="col-4">
+            <div class="card p-5 m-4" style="width: 18rem;" >
+                <form #frmReg="ngForm" (submit)="postData(frmReg.value)">
+                    <h2>Registration Form</h2>
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text" name="email" ngModel #email="ngModel"></dd>
+                        <dt>User Password</dt>
+                        <dd><input type="text" name="password" ngModel  #password="ngModel"></dd>
+                    </dl>
+                    <button class="btn btn-primary">Login</button>
+                </form>
+                <div *ngIf="loginError">{{loginError}}</div>
+               </div>
+        </div>
+        <div class="col-4">
+
+        </div>
+    
+    </div>
+  </div>
+  
